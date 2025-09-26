@@ -3,118 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morufat | Personal Website</title>
-
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      /* Global Styles */
-      body {
-        font-family: "Poppins", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f5f7fa;
-        color: #333;
-        line-height: 1.6;
-      }
-
-      header {
-        background: #4a90e2;
-        color: #fff;
-        padding: 40px 20px;
-        text-align: center;
-      }
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        font-weight: 600;
-      }
-      nav {
-        margin-top: 15px;
-      }
-      nav a {
-        color: #fff;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease;
-      }
-      nav a:hover {
-        color: #ffd700;
-      }
-
-      section {
-        padding: 50px 20px;
-        max-width: 900px;
-        margin: auto;
-      }
-
-      h2 {
-        color: #4a90e2;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-        border-left: 5px solid #4a90e2;
-        padding-left: 10px;
-      }
-
-      /* Card Layout for Skills & Projects */
-      .card {
-        background: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-      ul li {
-        margin-bottom: 10px;
-      }
-
-      footer {
-        background: #4a90e2;
-        color: #fff;
-        text-align: center;
-        padding: 20px 10px;
-        margin-top: 40px;
-      }
-      footer a {
-        color: #ffd700;
-        margin: 0 10px;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <title>Morufat – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
     <header>
       <h1>Hi, I'm Morufat</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <p>Nursing Student | Aspiring Data Scientist</p>
+      <img
+        src="profile.jpg"
+        alt="Profile picture of Morufat"
+        class="profile-pic"
+      />
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="card">
+    <div class="container">
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
         <p>
           Hi, I'm <strong>Morufat</strong>. I'm a nursing student, a data
           analyst and an aspiring data scientist. While pursuing my studies in
@@ -129,64 +46,34 @@
           excited to keep learning through real projects and internship
           opportunities.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card">
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
         <ul>
-          <li>
-            <strong>Data Tools:</strong> Excel (formulas, pivot tables, charts,
-            data cleaning)
-          </li>
-          <li>
-            <strong>Databases:</strong> SQL (queries, filtering, grouping,
-            joins)
-          </li>
-          <li>
-            <strong>Programming:</strong> Python (beginner, using Jupyter
-            Notebook)
-          </li>
-          <li><strong>Visualization & BI:</strong> Power BI, Tableau</li>
-          <li>
-            <strong>Other Skills:</strong> Analytical Thinking, Problem-Solving,
-            Organization, Communication, Teamwork
-          </li>
+          <li>Excel & SQL for data analysis</li>
+          <li>Python & Jupyter (learning in progress)</li>
+          <li>Power BI & Tableau for visualization</li>
+          <li>Planning, critical thinking, empathy</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card">
-        <ul>
-          <li>
-            <strong>Personal Portfolio Website</strong> – Currently building and
-            deploying my first personal website using HTML, CSS, and GitHub
-            Pages.
-          </li>
-          <li>
-            <strong>Excel Analysis Practice</strong> – Exploring datasets in
-            Excel, practicing data cleaning, pivot tables, and charts.
-          </li>
-          <li>
-            <strong>SQL Queries Learning Project</strong> – Writing queries to
-            extract and summarize information from practice databases.
-          </li>
-          <li>
-            <strong>Power BI Dashboard Practice</strong> – Creating simple
-            dashboards to visualize trends and insights from sample data.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="card">
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
         <p>
-          <a href="mailto:mormudashiru@gmail.com">Email</a> |
+          I’m currently working on small learning projects in Python and data
+          visualization. Check back soon as I’ll be updating this section!
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s connect:</p>
+        <p>
+          <a href="mailto:mormudashiru.com">Email</a> |
           <a href="https://www.linkedin.com/in/MorufatM" target="_blank"
             >LinkedIn</a
           >
@@ -195,11 +82,11 @@
             >GitHub</a
           >
         </p>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <footer>
-      <p>© 2025 Morufat. Built with ❤️ and curiosity.</p>
+      <p>&copy; 2025 Morufat. All rights reserved.</p>
     </footer>
   </body>
 </html>
